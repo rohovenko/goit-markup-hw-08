@@ -44,6 +44,10 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
 }
 
 .footer-social__link {
@@ -77,27 +81,66 @@
 }
 
 .contacts-container {
-    display: flex;
-    align-items: baseline;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;}
+    
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+                
 
 }
 
 .contacts-box {
-    min-width: 231px;
-    margin-right: 70px;
+    
+
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+        @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        min-width: 231px;
+        margin-right: 70px;
+    }
 }
 
 .link-box {
-    margin-right: 93px;
+    @media screen and (max-width: 767px) {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;}
+}
+
+.subscribe{
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
 }
 
 .subscribe-box {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     padding: 0;
     margin: 0;
     align-items: center;
     gap: 12px;
+
+    @media screen and (max-width: 1200px) {
+        justify-content: center;
+    }
 }
 
 .subscribe__text {
@@ -108,10 +151,14 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .subscribe__form {
-    width: 358px;
+    width: 450px;
     height: 50px;
     outline-offset: -1px;
     padding: 15px 16px;
@@ -125,6 +172,11 @@
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: ffffff;
     }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+                height: 50px;
+        }
 }
 
 .subscribe__button {

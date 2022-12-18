@@ -16,11 +16,15 @@
 
 .header-flex {
     display: flex;
-    align-items: center;
+        align-items: center;
+    
 }
 
 .site-nav {
-    display: flex;
+    display: none;
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;}
 }
 
 .site-nav__item+.site-nav__item {
@@ -28,8 +32,11 @@
 }
 
 .site-contacts {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+            margin-left: auto;
+    }
 }
 
 .site-contacts__item+.site-contacts__item {
