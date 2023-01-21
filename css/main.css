@@ -841,10 +841,12 @@ address {
           align-items: center;
 }
 
-.site-nav {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -856,14 +858,20 @@ address {
   margin-left: 50px;
 }
 
-.site-contacts {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site-contacts {
+    display: none;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .site-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-contacts {
     margin-left: auto;
   }
 }
