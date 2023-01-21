@@ -38,23 +38,22 @@
 }
 
 .site-contacts {
-    
-@media screen and (max-width: 767px) {
-        display: none;
-    }
-
-        @media screen and (max-width: 768px) {
-            display: flex;
+    margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
         }
-
-    @media screen and (min-width: 1200px) {
-        
-            margin-left: auto;
-    }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            
+        }
 }
 
 .site-contacts__item+.site-contacts__item {
-    margin-left: 50px;
+    
+    @media screen and (min-width: 1200px) {
+            margin-left: 50px;
+        }
 }
 
 .logo {
