@@ -1096,6 +1096,8 @@ address {
 @media screen and (min-width: 1200px) {
   .team-cards {
     margin-top: 50px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
