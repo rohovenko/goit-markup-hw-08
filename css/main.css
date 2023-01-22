@@ -615,6 +615,14 @@ address {
           align-items: center;
   gap: 12px;
 }
+@media screen and (max-width: 1199px) {
+  .subscribe-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media screen and (max-width: 1200px) {
   .subscribe-box {
     -webkit-box-pack: center;
